@@ -1,0 +1,21 @@
+# Ignore Python virtual environments
+venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+
+# Ignore IDE/editor files
+.vscode/
+*.swp
+*.swo
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Logs and environment
+*.log
+.env
