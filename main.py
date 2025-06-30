@@ -7,6 +7,11 @@ from model import stylize_image
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "API is running!"}
+
+
 @app.post("/stylize")
 async def stylize(file: UploadFile = File(...)):
     input_image = Image.open(file.file).convert("RGB")
